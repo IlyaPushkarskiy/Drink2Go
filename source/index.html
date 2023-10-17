@@ -17,16 +17,18 @@
         <img class="logo__link" width="34" height="38" src="images/logo.svg" alt="Логотип">
       </picture>
     </a>
-    <a class="main-nav__account" type="button">
-      <svg width="16" height="16">
-        <use href="images/icons/stack.svg#account"></use>
-      </svg>
-    </a>
-    <a class="main-nav__basket" type="button">
-      <svg width="16" height="16">
-        <use href="images/icons/stack.svg#basket"></use>
-      </svg>
-    </a>
+    <div class="main-header__wrapper">
+      <a class="main-nav__account" type="button">
+        <svg width="16" height="16">
+          <use href="images/icons/stack.svg#account"></use>
+        </svg>
+      </a>
+      <a class="main-nav__basket" type="button">
+        <svg width="16" height="16">
+          <use href="images/icons/stack.svg#basket"></use>
+        </svg>
+      </a>
+    </div>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">
@@ -57,6 +59,31 @@
       </ul>
     </nav>
   </header>
+
+  <main class="main-container">
+    <section class="slider">
+      <div class="slider__wrapper">
+        <img class="slider__picture" src="images/slider-mobile-picture1.png" alt="Декаф Флет Уайт">
+        <p class="slider__promo">
+          Новинка!
+        </p>
+        <h1 class="slider__title">
+          Декаф Флет Уайт
+        </h1>
+        <p class="slider__description">
+          Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления
+          после тяжёлого рабочего дня
+        </p>
+        <del class="slider__old-price">
+          295₽
+        </del>
+        <b class="slider__price">
+          225₽
+        </b>
+        <button class="slider__button-order" type="button">Заказать</button>
+      </div>
+    </section>
+  </main>
 
   <script src="js/script.js" defer></script>
 </body>

@@ -1,0 +1,40 @@
+.site-list {
+  @include list-reset;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  @media (max-width: 766px) {
+    z-index: 3;
+    position: absolute;
+    top: 63px;
+    right: -20px;
+    min-width: 320px;
+  }
+}
+
+.site-list__item-link {
+  @include list-reset;
+  color: #000000;
+  position: relative;
+  display: block;
+  padding: 21px 0 24px;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  @media (max-width: 766px) {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+
+.site-list__item:hover {
+  opacity: 0.6;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
+}
