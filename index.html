@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo logo">
-        <picture>
-          <img class="logo__link" width="34" height="38" src="images/icons/logo.svg" alt="Логотип">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <a class="main-nav__account" type="button">
-          <span class="visually-hidden">
-            Аккаунт
-          </span>
-        </a>
-        <a class="main-nav__basket" type="button">
-          <span class="visually-hidden">
-            Корзина
-          </span>
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
-        <ul class="main-nav__list site-list site-list--index">
-          <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--current site-list__item-link--index" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--index" href="#">
-              Каталог
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--index" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--index" href="#">
-              О нас
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <script src="js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="images/logo-full.svg">
+        <source media="(min-width: 768px)" srcset="images/logo-short.svg">
+        <img class="logo__link" width="34" height="38" src="images/logo.svg" alt="Логотип">
+      </picture>
+    </a>
+    <a class="main-nav__account" type="button">
+      <svg width="16" height="16">
+        <use href="images/icons/stack.svg#account"></use>
+      </svg>
+    </a>
+    <a class="main-nav__basket" type="button">
+      <svg width="16" height="16">
+        <use href="images/icons/stack.svg#basket"></use>
+      </svg>
+    </a>
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+      <ul class="main-nav__list site-list site-list--index">
+        <li class="site-list__item">
+          <a class="site-list__item-link site-list__item-link--current site-list__item-link--index" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link site-list__item-link--index" href="#">
+            Каталог
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link site-list__item-link--index" href="#">
+            Доставка
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link site-list__item-link--index" href="#">
+            О нас
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>
