@@ -29,6 +29,7 @@
         </svg>
       </a>
     </div>
+
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">
@@ -63,25 +64,134 @@
   <main class="main-container">
     <section class="slider">
       <div class="slider__wrapper">
-        <img class="slider__picture" src="images/slider-mobile-picture1.png" alt="Декаф Флет Уайт">
-        <p class="slider__promo">
-          Новинка!
-        </p>
-        <h1 class="slider__title">
-          Декаф Флет Уайт
-        </h1>
-        <p class="slider__description">
-          Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления
-          после тяжёлого рабочего дня
-        </p>
-        <del class="slider__old-price">
-          295₽
-        </del>
-        <b class="slider__price">
-          225₽
-        </b>
-        <button class="slider__button-order" type="button">Заказать</button>
+        <div class="slider__element">
+          <img class="slider__picture" src="images/slider-mobile-white@1x.png" alt="Декаф Флет Уайт">
+          <span class="slider__promo">
+            Новинка!
+          </span>
+          <h1 class="slider__title">
+            Декаф Флет Уайт
+          </h1>
+          <p class="slider__description">
+            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления
+            после тяжёлого рабочего дня
+          </p>
+          <del class="slider__old-price">
+            295₽
+          </del>
+          <b class="slider__price">
+            225₽
+          </b>
+          <button class="slider__button-order" type="button">
+            Заказать
+          </button>
+        </div>
+
+        <div class="slider__element">
+          <img class="slider__picture" src="images/slider-mobile-latte@1x.png" alt="Лавандовый Латте">
+          <p class="slider__promo">
+            Новинка!
+          </p>
+          <h1 class="slider__title">
+            Лавандовый Латте
+          </h1>
+          <p class="slider__description">
+            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо
+            на вершину Радужных гор
+          </p>
+          <del class="slider__old-price">
+            285₽
+          </del>
+          <b class="slider__price">
+            265₽
+          </b>
+          <button class="slider__button-order" type="button">
+            Заказать
+          </button>
+        </div>
+
+        <div class="slider__element">
+          <img class="slider__picture" src="images/slider-mobile-espresso@1x.png" alt="Тройной Эспрессо">
+          <p class="slider__promo">
+            Новинка!
+          </p>
+          <h1 class="slider__title">
+            Тройной Эспрессо
+          </h1>
+          <p class="slider__description">
+            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое
+            настоящая бодрость
+          </p>
+          <del class="slider__old-price">
+            395₽
+          </del>
+          <b class="slider__price">
+            375₽
+          </b>
+          <button class="slider__button-order" type="button">
+            Заказать
+          </button>
+        </div>
       </div>
+
+      <button class="slider__button slider__prev" type="button" aria-label="Посмотреть преведущий слайд">
+        <svg width="11" height="20">
+          <use href="images/icons/stack.svg#prev"></use>
+        </svg>
+      </button>
+
+      <button class="slider__button slider__next" type="button" aria-label="Посмотреть следующий слайд">
+        <svg width="11" height="20">
+          <use href="images/icons/stack.svg#next"></use>
+        </svg>
+      </button>
+    </section>
+
+    <section class="advantage">
+      <span class="advantage__promo">
+        Преимущества
+      </span>
+      <h2 class="advantage__title">
+        Главные причины выбрать Drink2Go
+      </h2>
+      <ul class="advantage__list">
+        <li class="advantage__item advantage__item">
+          <img class="advantage__item-picture" src="images/advantage-speed.svg" alt="Cекундомер" width="50" height="56">
+          <h3 class="advantage__item-title">
+            Скорость
+          </h3>
+          <p class="advantage__item-content">
+            Готовый напиток всегда под рукой — просто открой банку
+          </p>
+        </li>
+        <li class="advantage__item advantage__item">
+          <img class="advantage__item-picture" src="images/advantage-comfortable.svg" alt="Карман" width="52" height="56">
+          <h3 class="advantage__item-title">
+            Удобство
+          </h3>
+          <p class="advantage__item-content">
+            Легко помещается и в карман, и в маленькую сумочку
+          </p>
+        </li>
+        <li class="advantage__item advantage__item">
+          <img class="advantage__item-picture" src="images/advantage-energy.svg" alt="Энергия" width="42" height="56">
+          <h3 class="advantage__item-title">
+            Бодрость
+          </h3>
+          <p class="advantage__item-content">
+            Сбалансированная доза кофеина даст мощный заряд энергии
+          </p>
+        </li>
+        <li class="advantage__item advantage__item">
+          <img class="advantage__item-picture" src="images/advantage-ecology.svg" alt="Листик" width="46" height="56">
+          <h3 class="advantage__item-title">
+            Экологичность
+          </h3>
+          <p class="advantage__item-content">
+            Вся упаковка сделана из перерабатываемых материалов
+          </p>
+        </li>
+      </ul>
     </section>
   </main>
 
