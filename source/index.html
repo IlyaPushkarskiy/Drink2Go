@@ -10,11 +10,11 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo">
+    <a class="main-header__logo logo" href="https://htmlacademy.ru/intensive/adaptive">
       <picture>
         <source media="(min-width: 1200px)" srcset="images/logo-full.svg">
         <source media="(min-width: 768px)" srcset="images/logo-short.svg">
-        <img class="logo__link" width="34" height="38" src="images/logo.svg" alt="Логотип">
+        <img class="logo__link" src="images/logo.svg" alt="Логотип">
       </picture>
     </a>
     <div class="main-header__wrapper">
@@ -82,12 +82,12 @@
           <b class="slider__price">
             225₽
           </b>
-          <button class="slider__button-order" type="button">
+          <button class="button slider__button-order" type="button">
             Заказать
           </button>
         </div>
 
-        <div class="slider__element">
+        <div class="slider__element slider__element--latte">
           <img class="slider__picture" src="images/slider-mobile-latte@1x.png" alt="Лавандовый Латте">
           <p class="slider__promo">
             Новинка!
@@ -105,12 +105,12 @@
           <b class="slider__price">
             265₽
           </b>
-          <button class="slider__button-order" type="button">
+          <button class="button slider__button-order" type="button">
             Заказать
           </button>
         </div>
 
-        <div class="slider__element">
+        <div class="slider__element slider__element--espresso">
           <img class="slider__picture" src="images/slider-mobile-espresso@1x.png" alt="Тройной Эспрессо">
           <p class="slider__promo">
             Новинка!
@@ -128,7 +128,7 @@
           <b class="slider__price">
             375₽
           </b>
-          <button class="slider__button-order" type="button">
+          <button class="button slider__button-order" type="button">
             Заказать
           </button>
         </div>
@@ -165,7 +165,8 @@
           </p>
         </li>
         <li class="advantage__item advantage__item">
-          <img class="advantage__item-picture" src="images/advantage-comfortable.svg" alt="Карман" width="52" height="56">
+          <img class="advantage__item-picture" src="images/advantage-comfortable.svg" alt="Карман" width="52"
+            height="56">
           <h3 class="advantage__item-title">
             Удобство
           </h3>
@@ -194,6 +195,91 @@
       </ul>
     </section>
   </main>
+
+  <footer class="main-footer">
+    <section class="main-footer__container">
+      <div class="main-footer__box">
+        <h2 class="visually-hidden">
+          Социальные сети
+        </h2>
+        <a class="main-footer__logo logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo-full.svg">
+            <img class="logo__link" src="images/logo-short.svg" alt="Логотип">
+          </picture>
+        </a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">
+                Вконтакте.
+              </span>
+              <svg class="social-list__icon vk-icon" width="20" height="20">
+                <use href="images/icons/stack.svg#vk-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://mail.ru/htmlacademy">
+              <span class="visually-hidden">
+                Мэил
+              </span>
+              <svg class="social-list__icon" width="22" height="22">
+                <use href="images/icons/stack.svg#mail-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">
+                Одноклассники
+              </span>
+              <svg class="social-list__icon" width="20" height="20">
+                <use href="images/icons/stack.svg#ok-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-footer__nav">
+        <h3 class="main-footer__nav-title">
+          Интернет-магазин
+        </h3>
+        <ul class="main-footer__nav-list nav-list">
+          <li class="main-footer__nav-item">
+            <a class="main-footer__nav-link href=">
+              Каталог
+            </a>
+          </li>
+          <li class="main-footer__nav-item">
+            <a class="main-footer__nav-link">
+              Каталог
+            </a>
+          </li>
+          <li class="main-footer__nav-item">
+            <a class="main-footer__nav-link">
+              Каталог
+            </a>
+          </li>
+          <li class="main-footer__nav-item">
+            <a class="main-footer__nav-link">
+              Каталог
+            </a>
+          </li>
+          <li class="main-footer__nav-item">
+            <a class="main-footer__nav-link">
+              Каталог
+            </a>
+          </li>
+          <li class="main-footer__nav-item">
+            Доставка
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </footer>
 
   <script src="js/script.js" defer></script>
 </body>

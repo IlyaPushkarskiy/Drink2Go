@@ -3,8 +3,8 @@
   flex-direction: column;
   position: relative;
   width: $mobile-only-width;
-  background-color: #F3EBE1;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .slider__wrapper {
@@ -20,13 +20,22 @@
   box-sizing: border-box;
   padding: 20px 20px 60px;
   width: 320px;
+  background-color: #f3ebe1;
+}
+
+.slider__element--latte {
+  background-color: #eae6fc;
+}
+
+.slider__element--espresso {
+  background-color: #e5e6e8;
 }
 
 .slider__promo {
   @include list-reset;
   margin-top: 10px;
   margin-bottom: 4px;
-  color: #7859CF;
+  color: hsl(256, 55%, 58%);
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
@@ -48,7 +57,7 @@
 }
 
 .slider__old-price {
-  color: #7859CF;
+  color: #7859cf;
   font-size: 18px;
   font-weight: 600px;
 }
@@ -59,11 +68,6 @@
 }
 
 .slider__button-order {
-  color: #ffffff;
-  background-color: #7859CF;
-  padding: 8px 20px;
-  border: 0;
-  border-radius: 4px;
   margin-left: 20px;
 }
 

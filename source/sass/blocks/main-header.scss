@@ -5,8 +5,9 @@
   align-items: center;
   background-color: #ffffff;
   color: #ffffff;
-  padding: 12px 20px;
+  padding-left: 20px;
   box-sizing: border-box;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -19,5 +20,4 @@
 
 .main-header__wrapper {
   margin-left: auto;
-  margin-right: 60px;
 }

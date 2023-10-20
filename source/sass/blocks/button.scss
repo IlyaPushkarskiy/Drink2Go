@@ -1,0 +1,15 @@
+.button {
+  @include button-sample;
+}
+
+.button:hover {
+  background-color: #9070ec;
+}
+
+.button:active {
+  background-color: #593cac;
+}
+
+.button:disabled {
+  background-color: #bdbdbd;
+}
