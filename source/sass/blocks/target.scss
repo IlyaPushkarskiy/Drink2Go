@@ -83,11 +83,11 @@
   }
 }
 
-.target__item-value[type="radio"]:checked+.target__item-name::after {
+.target__item-value[type="radio"]:checked + .target__item-name::after {
   display: block;
 }
 
-.target__item-value[type="checkbox"]:checked+.target__item-name::after {
+.target__item-value[type="checkbox"]:checked + .target__item-name::after {
   display: block;
 }
 
@@ -99,10 +99,10 @@
   opacity: 0.8;
 }
 
-.target__item-value:active~.target__item-name {
+.target__item-value:active ~ .target__item-name {
   opacity: 0.7;
 }
 
-.target__item-value:disabled~.target__item-name {
+.target__item-value:disabled ~ .target__item-name {
   opacity: 0.3;
 }
