@@ -5,6 +5,14 @@
   width: $mobile-only-width;
   overflow: hidden;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .slider__wrapper {
@@ -13,6 +21,14 @@
   position: relative;
   left: 0;
   transition: all ease 0.5s;
+
+  @media (min-width: $tablet-width) {
+    width: 2304px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 4320px;
+  }
 }
 
 .slider__element {
@@ -21,6 +37,22 @@
   padding: 20px 20px 60px;
   width: 320px;
   background-color: #f3ebe1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: $tablet-width;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 180px 80px 246px 735px;
+    width: $desktop-width;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
 }
 
 .slider__element--latte {
@@ -35,12 +67,16 @@
   @include list-reset;
   margin-top: 10px;
   margin-bottom: 4px;
-  color: hsl(256, 55%, 58%);
+  color: #7859cf;
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 0.48px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .slider__title {
@@ -48,18 +84,41 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 48px;
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    font-style: normal;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+  }
 }
 
 .slider__description {
   @include list-reset;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .slider__old-price {
   color: #7859cf;
-  font-size: 18px;
   font-weight: 600px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 32px;
 }
 
 .slider__price {
@@ -68,19 +127,54 @@
 }
 
 .slider__button-order {
-  margin-left: 20px;
+  margin-left: 25px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .slider__button {
   position: absolute;
   content: "";
-  left: 0;
-  top: 50%;
+  left: 26px;
+  top: 48%;
   border: none;
   background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    top: 35%;
+  }
 }
 
 .slider__next {
   left: unset;
-  right: 0;
+  right: 30px;
+}
+
+.slider__picture {
+  position: relative;
+}
+
+.slider__element-box {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 105px;
+    top: 30px;
+  }
+}
+
+.slider__price-wrapper {
+  display: flex;
+  margin: 0 25px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }

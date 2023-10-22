@@ -13,3 +13,28 @@
 .button:disabled {
   background-color: #bdbdbd;
 }
+
+.button-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    flex-direction: row;
+    grid-column: 2;
+  }
+}
+
+.button-form__wrapper {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.button-form__reset {
+  background-color: #ffffff;
+  color: #7859cf;
+}

@@ -1,13 +1,7 @@
-.logo__link {
-  @media (min-width: $tablet-width) {
-    width: 82px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 170px;
-  }
-}
-
 .logo {
   cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 }

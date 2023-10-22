@@ -2,6 +2,10 @@
   position: relative;
   width: auto;
   min-height: 51px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 162px;
+  }
 }
 
 .main-nav__toggle {
@@ -21,45 +25,44 @@
 .main-nav__toggle:active,
 .main-nav__account:active,
 .main-nav__basket:active {
-  background-color: #F0EBFF;
+  background-color: #f0ebff;
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  width: 24px;
+  width: 16px;
   height: 2px;
   background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-  top: 15px;
-  left: 13px;
+  box-shadow: 0 5px 0 0 #000000, 0 10px 0 0 #000000;
+  top: 23px;
+  left: 22px;
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {
   background-color: #000000;
   box-shadow:
-    0 8px 0 0 #000000,
-    0 16px 0 0 #000000;
+    0 5px 0 0 #000000,
+    0 10px 0 0 #000000;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: #000000;
   box-shadow:
-    0 8px 0 0 #000000,
-    0 16px 0 0 #000000, ;
+    0 5px 0 0 #000000,
+    0 10px 0 0 #000000;
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
     position: absolute;
     background-color: #000000;
-    width: 24px;
+    width: 20px;
     height: 2px;
-    top: 22px;
-    left: 13px;
+    top: 27px;
+    left: 20px;
   }
 
   &::before {
@@ -93,17 +96,49 @@
 }
 
 .main-nav--closed .main-nav__list {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
-.main-nav__account {
-  padding: 22px;
-  cursor: pointer;
-}
-
+.main-nav__account,
 .main-nav__basket {
   padding: 22px;
   cursor: pointer;
+  display: flex;
+  gap: 8px;
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 20px;
+  }
+}
+
+.main__nav-account-desktop,
+.main__nav-account-basket {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+}
+
+.main-nav__account:hover,
+.main-nav__basket:hover,
+.main-nav__account:focus,
+.main-nav__basket:focus {
+  color: #7859cf;
+  stroke: #7859cf;
+}
+
+.main-nav__account:active,
+.main-nav__basket:active {
+  color: #7859cf;
+  stroke: #7859cf;
+  background-color: #f0ebff;
 }

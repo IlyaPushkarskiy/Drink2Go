@@ -17,19 +17,22 @@ let offset = 0;
 const sliderLine = document.querySelector('.slider__wrapper');
 const nextButton = document.querySelector('.slider__next');
 const prevButton = document.querySelector('.slider__prev');
+const images = document.querySelectorAll('.slider__element')
+let widthOfWindow = sliderLine.offsetWidth;
 
 nextButton.addEventListener('click', () =>{
-  offset += 320;
-  if (offset > 640) {
+  offset += widthOfWindow / images.length;
+  if (offset > widthOfWindow - 1) {
     offset = 0;
   }
   sliderLine.style.left = `${-offset }px`;
 });
 
 prevButton.addEventListener('click', () =>{
-  offset -= 320;
+  offset -= widthOfWindow / images.length;
   if (offset < 0) {
-    offset = 640;
+    offset = widthOfWindow - widthOfWindow / images.length;
   }
   sliderLine.style.left = `${-offset }px`;
 });
+

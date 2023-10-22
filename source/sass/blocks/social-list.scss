@@ -10,19 +10,18 @@
   padding: 10px;
 }
 
-.social-list__icon {
-  fill: #fc0505;
+.social-list__link {
+  fill: #bdbdbd;
 }
 
-.social-list__icon:hover {
-  fill: #68b738;
+.social-list__link:hover {
+  fill: #a890eb;
 }
 
-.social-list__icon:active {
-  fill: #68b738;
-  opacity: 0.3;
+.social-list__link:active {
+  fill: #7859cf;
 }
 
-.social-list__icon:disabled {
+.social-list__link:disabled {
   opacity: 0.1;
 }
